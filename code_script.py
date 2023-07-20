@@ -39,7 +39,7 @@ def main(page):
             #match time
             time=all_matches[i].find('div',{'class':'MResult'}).find('span',{'class':'time'}).text.strip()
             
-            matchs_details.append({'نوع البطوله':title ,'الوصف':kind , "الفريق الاول":team_A, "الفؤسق الثانى":team_B,"النتيجه": score ,"التوقيت":time})
+            matchs_details.append({'نوع البطوله':title ,'الوصف':kind , "الفريق الاول":team_A, "الفريق الثانى":team_B,"النتيجه": score ,"التوقيت":time})
     for i in range(len(championship)):
         
         get_match_info(championship[i])
